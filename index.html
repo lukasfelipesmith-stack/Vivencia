@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivencia | Bienes Raíces de Alta Gama</title>
+  <title>Vivenza | Bienes Raíces de Alta Gama</title>
   
   <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,7 +160,7 @@
           El arte de habitar lo <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-brand-accent">extraordinario.</span>
         </h1>
         <p class="text-base sm:text-lg text-neutral-300 font-light leading-relaxed mb-8 max-w-2xl">
-          En Vivencia conectamos vidas con espacios memorables. Explora nuestro catálogo de residencias selectas, comparte tus propiedades con miles de compradores y consulta las valoraciones de nuestra comunidad.
+          En Vivenzaconectamos vidas con espacios memorables. Explora nuestro catálogo de residencias selectas, comparte tus propiedades con miles de compradores y consulta las valoraciones de nuestra comunidad.
         </p>
       </div>
 
@@ -343,7 +343,7 @@
         </div>
         <h3 class="text-xl font-bold text-brand-dark mb-2">Due Diligence Integral</h3>
         <p class="text-neutral-500 text-sm leading-relaxed">
-          Cada propiedad listada en Vivencia cuenta con estudio de títulos, avalúo certificado y verificación documental estricta para tu total tranquilidad.
+          Cada propiedad listada en Vivenzacuenta con estudio de títulos, avalúo certificado y verificación documental estricta para tu total tranquilidad.
         </p>
       </div>
 
@@ -384,7 +384,7 @@
             Comencemos a escribir tu nueva historia.
           </h2>
           <p class="text-neutral-300 text-sm sm:text-base leading-relaxed mb-8">
-            Nuestros consultores inmobiliarios en Vivencia están a tu disposición para programar visitas privadas o coordinar la venta de tu inmueble.
+            Nuestros consultores inmobiliarios en Vivenzaestán a tu disposición para programar visitas privadas o coordinar la venta de tu inmueble.
           </p>
           
           <div class="space-y-4 text-sm text-neutral-300">
@@ -893,7 +893,7 @@
           "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80"
         ],
         resenas: [
-          { autor: "Claire Dupont", estrellas: 5, texto: "Espacio impecable y silencioso a pesar de estar a minutos de la vida urbana. Servicio de Vivencia 10/10." }
+          { autor: "Claire Dupont", estrellas: 5, texto: "Espacio impecable y silencioso a pesar de estar a minutos de la vida urbana. Servicio de Vivenza10/10." }
         ]
       },
       {
@@ -924,7 +924,7 @@
         estrellas: 5,
         foto: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
         fecha: "Hace 2 semanas",
-        comentario: "Vivencia simplificó todo el proceso de adquisición de dos penthouses. La asesoría jurídica y la discreción fueron impecables de principio a fin."
+        comentario: "Vivenzasimplificó todo el proceso de adquisición de dos penthouses. La asesoría jurídica y la discreción fueron impecables de principio a fin."
       },
       {
         id: 2,
@@ -942,7 +942,7 @@
         estrellas: 5,
         foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
         fecha: "Hace 1 mes",
-        comentario: "Buscábamos un entorno campestre con la mejor arquitectura. El acompañamiento de los brokers de Vivencia superó con creces nuestras expectativas."
+        comentario: "Buscábamos un entorno campestre con la mejor arquitectura. El acompañamiento de los brokers de Vivenzasuperó con creces nuestras expectativas."
       }
     ];
 
@@ -1332,13 +1332,13 @@
     function compartirPropiedadActual() {
       if (!propiedadSeleccionada) return;
 
-      const textoCompartir = `¡Mira esta propiedad en Vivencia Bienes Raíces! ${propiedadSeleccionada.titulo} en ${propiedadSeleccionada.ubicacion} por $${propiedadSeleccionada.precio.toLocaleString()} USD.`;
+      const textoCompartir = `¡Mira esta propiedad en VivenzaBienes Raíces! ${propiedadSeleccionada.titulo} en ${propiedadSeleccionada.ubicacion} por $${propiedadSeleccionada.precio.toLocaleString()} USD.`;
       const enlaceSimulado = `${window.location.origin}${window.location.pathname}#propiedad-${propiedadSeleccionada.id}`;
 
       // Intento de uso de Web Share API nativa si está disponible (especialmente en móviles)
       if (navigator.share) {
         navigator.share({
-          title: `Vivencia | ${propiedadSeleccionada.titulo}`,
+          title: `Vivenza| ${propiedadSeleccionada.titulo}`,
           text: textoCompartir,
           url: enlaceSimulado
         }).then(() => {
@@ -1498,7 +1498,7 @@
     function enviarContacto(e) {
       e.preventDefault();
       e.target.reset();
-      mostrarToast("¡Mensaje Enviado!", "Un consultor senior de Vivencia se comunicará contigo en breve.");
+      mostrarToast("¡Mensaje Enviado!", "Un consultor senior de Vivenza se comunicará contigo en breve.");
     }
   </script>
 
